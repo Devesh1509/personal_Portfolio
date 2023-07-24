@@ -465,6 +465,34 @@ p{
 
 /*================================PROJECT END=====================================================*/
 
+/* * {
+  box-sizing: border-box;
+} */
+.column {
+  float: left;
+
+  width: 33.33%;
+  padding: 100px;
+  
+}
+
+/* Clearfix (clear floats) */
+.row{
+  content: "";
+  clear: both;
+  display: table;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+
+
+
+
+
 /* ////......Contact......///// */
 
 .contact {

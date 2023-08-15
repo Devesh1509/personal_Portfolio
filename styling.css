@@ -156,7 +156,7 @@ header {
   top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #07374a;
+  color: #b5deee;
   width: 100%;
   text-align: center;
 }
@@ -213,6 +213,8 @@ header {
   object-fit: cover;
   border-radius: 50%;
   border-style: outset;
+  fill: drop-shadow(10px 20px black);
+  /* //style="fill: drop-shadow(10px 20px black); */
 }
 
 .about-content p {
@@ -271,15 +273,16 @@ header {
   padding-bottom: 5px;
   color: rgb(250, 250, 250);
 }
-p{
+/* p{
   margin-top: 20px;
   margin-bottom: 10px;
-}
+} */
+
 
 .html {width: 90%; background-color: #07374a;}
 .css {width: 80%; background-color: #07374a;}
-.js {width: 65%; background-color: #07374a;}
-.php {width: 60%; background-color: #07374a;}
+.js {width: 75%; background-color: #07374a;}
+.java {width: 60%; background-color: #07374a;}
 
 
 
@@ -474,6 +477,15 @@ p{
   width: 33.33%;
   padding: 100px;
   
+}
+.column button{
+  background: #ffffff;
+  /* padding: 0.5rem;
+  margin-top: 0.5rem; */
+  /* width: 150px; */
+  margin-right: 5px;
+  border: none;
+  border-bottom: 2px solid #07374a;
 }
 
 /* Clearfix (clear floats) */

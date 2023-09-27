@@ -5,20 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MyPortfolio</title>
-  <link rel="shortcut icon" href="/assets/images/about_Me.png" type="image/x-icon">  
+  <link rel="shortcut icon" href="/assets/images/about_Me.png" type="image/x-icon">
   <link rel="stylesheet" href="styling.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 
-  
+
   <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-   <!-- =============================================HOME SECTION=============================================== --> 
+  <!-- =============================================HOME SECTION=============================================== -->
 
   <div class="parallax">
     <div class="home-content" id="home-page">
@@ -34,39 +35,42 @@
   </div>
   <div>
     <!-- <section class="Home" id="Homepage"> -->
-      <!-- <header class="header"> -->
-    
-        <!---------------------------navigation bar-------------------------->
-        <div id="navbar">
-          <a href="#default" id="logo">Devesh Chandel</a>
-          <div id="navbar-right">
-            <a href="#home-page">Home</a>
-    
-            <a href="#about">About</a>
-    
-            <a href="#skills">Skills</a>
-            <a href="#my-works">Projects</a>
-            <a href="#contact-me">Contact</a>
-          </div>
-        </div>
+    <!-- <header class="header"> -->
+
+    <!---------------------------navigation bar-------------------------->
+    <div id="navbar">
+      <a href="#default" id="logo">Devesh Chandel</a>
+      <div id="navbar-right">
+        <a href="#home-page">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
 
     <!-- =================================================HOME SECTION END================================================== -->
-    
+
     <!-- ================================================ABOUT SECTION================================================== -->
-    <section class="about-me" id="about">
-      <div class="container">
+    <section class="basecolor" id="about">
+      <!-- <div class="container"> -->
         <div class="about-content">
+          <div>
+            <h1 class="about-heading">About Me</h1>
+          </div>
           <div class="left-content">
-            <div>
+            <!-- <div>
               <h1 class="about-heading">About Me</h1>
-            </div>
-            <img src="assets/images/about_Me.png"  alt="image" />
+            </div> -->
+            <img src="assets/images/about_Me.png" alt="image" />
             <p>
               Strong in design and integration with intuitive problem-solving skills.
-                Proficient in JAVA, HTML, CSS, JAVASCRIPT, and SQL.
-                Passionate about implementing and launching new projects.
-                Ability to translate business requirements into technical solutions.
-                Looking to start the career as an entry-level software engineer with a reputed firm driven by technology. 
+              Proficient in JAVA, HTML, CSS, JAVASCRIPT, and SQL.
+              Passionate about implementing and launching new projects.
+              Ability to translate business requirements into technical solutions.
+              Looking to start the career as an entry-level software engineer with a reputed firm driven by technology.
               <!-- Motivated final-year Computer Science Engineering student
                with a strong foundation in DSA, Java, HTML, CSS, JavaScript,
               and front-end development. Proficient in the Spring framework 
@@ -89,41 +93,41 @@
             </div>
           </div>
         </div>
-      </div>
+      <!-- </div> -->
     </section>
     <!-- =============================================ABOUT SECTION END================================================== -->
     <!--=======================================================SKILL SECTION START=================================================================== -->
-    <section id="skills">
+    <section id="skills" class="basecolor">
       <div class="skill-class">
         <div class="proj-heading">
-          <h1>skills</h1>
+          <h1>Skills</h1>
         </div>
         <div class="bar">
           <p>HTML</p>
           <div class="contai">
-            <div class="skilled html">90%</div>
+            <div id="themecolor" class="skilled html">90%</div>
           </div>
           <p>CSS</p>
           <div class="contai">
-            <div class="skilled css">80%</div>
+            <div id="themecolor" class="skilled css">80%</div>
           </div>
           <p>JavaScript</p>
           <div class="contai">
-            <div class="skilled js">75%</div>
+            <div id="themecolor" class="skilled js">75%</div>
           </div>
           <p>JAVA</p>
           <div class="contai">
-            <div class="skilled java">70%</div>
+            <div id="themecolor" class="skilled java">70%</div>
           </div>
         </div>
       </div>
     </section>
     <!--=======================================================SKILL SECTION END=================================================================== -->
-    
+
     <!--=======================================================PROJECT SECTION=================================================================== -->
 
 
-    <section id="my-works">
+    <!-- <section id="my-works">
       <div class="portfolio">
         <div class="proj-heading">
           <h1>Portfolio</h1>
@@ -168,56 +172,126 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+
 
     <!--=======================================================PROJECT SECTION END=================================================================== -->
 
-    <section class="project">
 
-      <div class="row">
+    <!------------------------------------------------------------------------------------>
 
-        <div class="column" >
-          <img src="solarTracSys.jpeg" alt="Snow" style="width:100%" >
-          <div style="text-align: center;">
-            <button><a href="https://github.com/Devesh1509/JavaScript-Slider" target="blank">View source <i
-              class="fas fa-external-link-alt"></i></a>
-            </button>
-            <button><a href="https://devesh1509.github.io/JavaScript-Slider" target="blank">Try it Live <i
-              class="fas fa-external-link-alt"></i></a>
-            </button>
-          </div>
+    <!-- //////////////// -->
+    <section id="projects" class="basecolor">
+
+
+      <!-- <h2>Projects</h2> -->
+      <div class="project">
+
+        <h2>Project 1</h2>
+        <img src="./assets/images/slider.png" alt="Project 1">
+        <!-- <div class="project-buttons">
+          <a href="#" class="project-button">Button 1</a>
+          <a href="#" class="project-button">Button 2</a>
+        </div> -->
+        <div class="poject-btn">
+          <button id="themecolor" class="left-button">Left Button</button>
+          <button id="themecolor" class="right-button">Right Button</button>
         </div>
 
-
-        <div class="column" style="background-color: rgb(234, 243, 240);">
-          <img src="https://i.makeagif.com/media/5-24-2018/cOFeYt.gif" alt="Snow" style="width:110%" height="92%">
-
-          <div style="text-align: center;">
-            <button><a href="https://github.com/Devesh1509/JavaScript-Slider" target="blank">View source <i
-              class="fas fa-external-link-alt"></i></a>
-            </button>
-            <button><a href="https://devesh1509.github.io/JavaScript-Slider" target="blank">Try it Live <i
-              class="fas fa-external-link-alt"></i></a>
-            </button>
-          </div>
+        <div class="project-details">
+          <h3>Project 1</h3>
+          <p>Description of Project 1.
+            collection of images using "Next" and "Previous" buttons.
+            It was developed using a combination of HTML, CSS, and JavaScript, with a focus on user
+            experience and design aesthetics.
+            he Image Slider project is a dynamic and interactive web component that allows users
+            to seamlessly navigate through a collection of images using "Next" and "Previous" buttons.
+            It was developed using a ider project
+          </p>
+          <a href="project1.html">Learn More</a>
         </div>
-
-
-        <div class="column" >
-          <img src="solarTracSys.jpeg" alt="Snow" style="width:100%">
-          <div style="text-align: center;">
-            <button><a href="https://github.com/Devesh1509/JavaScript-Slider" target="blank">View source <i
-              class="fas fa-external-link-alt"></i></a>
-            </button>
-            <button><a href="https://devesh1509.github.io/JavaScript-Slider" target="blank">Try it Live <i
-              class="fas fa-external-link-alt"></i></a>
-            </button>
-          </div>
-        </div>
-
       </div>
 
+      <div class="project">
+        <h2>project2</h2>
+        <img src="./assets/images/projsld.jpeg" alt="Project 2">
+        <div class="poject-btn">
+          <button id="themecolor" class="left-button">Left Button</button>
+          <button id="themecolor" class="right-button">Right Button</button>
+        </div>
+        <div class="project-details">
+          <h2>Image Slider</h2>
+          <p>Description of Project 2.
+            Description:
+            The Image Slider project is a dynamic and interactive web component that allows users
+            to seamlessly navigate through a collection of images using "Next" and "Previous" buttons.
+            It was developed using a ider project is a dynamic and interactive web component that allows users to
+            seamlessly navigate through a collection of images using "Next" and "Previous" buttons. It was developed
+            using a combination of HTML, CSS, and JavaScript, with a focus on user experience and design aesthetics.
+
+            The Image Slider project showcases my skills in front-end web development, user interface design, and
+            JavaScript programming. Its user-friendly nature and adaptability make it a valuable addition to any website
+            seeking to showcase visual content in an engaging and interactive way. combination of HTML, CSS, and
+            JavaScript, with a focus on user
+            experience and design aesthetics.
+          </p>
+          <p>
+            The Image Slider project showcases my skills in front-end web development, user interface
+            design, and JavaScript programming. Its user-friendly nature and adaptability make it a
+            valuable addition to any website seeking to showcase visual content in an engaging and
+            interactive way.
+          </p>
+          <a href="project2.html">Learn More</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h2>Project3</h2>
+        <img src="./assets/images/projSRS-removebg-preview (2).png" alt="Project 3">
+        <div class="poject-btn">
+          <button id="themecolor" class="left-button">Left Button</button>
+          <button id="themecolor" class="right-button">Right Button</button>
+        </div>
+        <div class="project-details">
+          <h3>Project 3</h3>
+          <p>Description of Project 3.</p>
+          <a href="project3.html">Learn More</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h2>Project 4</h2>
+        <img src="./assets/images/advice.png" alt="Project 2">
+        <div class="poject-btn">
+          <button id="themecolor" class="left-button">view source</button>
+          <button id="themecolor" class="right-button">try it live</button>
+        </div>
+        <div class="project-details">
+          <h3>Project 2</h3>
+          <p>Description of Project 2.</p>
+          <a href="project2.html">Learn More</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h2>Project 5</h2>
+        <img src="./assets/images/slider.png" alt="Project 3">
+        <div class="project-buttons">
+          <a href="#" style="margin-top: 2px; margin-left: 20px; padding-left: 40px; padding-right: 40px;">Button 1</a>
+          <a href="#" style="margin-top: 10px; margin-left: 80px;padding-left: 40px; padding-right: 40px;">Button 2</a>
+        </div>
+        <div class="project-details">
+          <h3>Project 3</h3>
+          <p>Description of Project 3.</p>
+          <a href="project3.html">Learn More</a>
+        </div>
+      </div>
+
+
+
+      <!-- Add more project items as needed -->
     </section>
+
 
 
 
@@ -225,49 +299,42 @@
 
 
     <!--======================================================CONTACT========================================================-->
-    <section id="contact-me">
-      <div class="contact-heading">
-        <h1>Contact Me</h1>
-      </div>
-      <div class="background">
-    
-        <div class="form">
-          <div class="screen">
-            <div class="screen-body">
-              <div class="screen-body-item left">
-                <div class="app-title">
-                  <span>CONTACT</span>
-                  <span>ME</span>
-                </div>
-                <div class="app-contact">CONTACT INFO : +91 9111441120</div>
-              </div>
-              <div class="screen-body-item">
-                <div class="app-form">
-                  <div class="app-form-group">
-                    <input class="app-form-control" placeholder="NAME" value="">
-                  </div>
-                  <div class="app-form-group">
-                    <input class="app-form-control" placeholder="EMAIL">
-                  </div>
-                  <div class="app-form-group">
-                    <input class="app-form-control" placeholder="CONTACT NO">
-                  </div>
-                  <div class="app-form-group message">
-                    <input class="app-form-control" placeholder="MESSAGE">
-                  </div>
-                  <div class="app-form-group buttons">
-                    <button class="app-form-button">CANCEL</button>
-                    <button class="app-form-button">SEND</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+    <section id="contact" class="basecolor">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-cards">
+          <div class="contact-card">
+            <h3>Contact Information</h3>
+            <ul>
+              <li><strong>Name:</strong> Devesh Chandel</li>
+              <li><strong>Email:</strong> <a href="mailto:your.email@example.com">devchandel15@email.com</a></li>
+              <li><strong>Phone:</strong> +91 91114 41120</li>
+              <li><strong>Location:</strong> Bhopal, Madhya Pradesh</li>
+            </ul>
+          </div>
+          <div class="contact-card">
+            <h3>Download CV</h3>
+            <a id="themecolor" href="cv.pdf" download="your_cv.pdf" class="btn btn-primary">Download</a>
+          </div>
+          <div class="contact-card">
+            <h3>Availability</h3>
+            <p>I am available for freelance projects. Feel free to reach out!</p>
           </div>
         </div>
       </div>
-      
     </section>
-    <div class="footer">
+
+
+
+
+
+
+
+
+
+
+    <div id="footer" class="basecolor">
       <h1>Devesh</h1>
       <div class="footer-social">
         <footer class="bg-dark text-center text-white">
@@ -276,39 +343,34 @@
             <!-- Section: Social media -->
             <section class="mb-4">
               <!-- Facebook -->
-              <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/devesh.chandel.96/" role="button"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-    
+              <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/devesh.chandel.96/"
+                role="button"><i class="fab fa-facebook-f"></i></a>
+
               <!-- Twitter -->
-              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                ><i class="fab fa-twitter"></i
-              ></a>
-    
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                  class="fab fa-twitter"></i></a>
+
               <!-- Google -->
-              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                ><i class="fab fa-google"></i
-              ></a>
-    
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                  class="fab fa-google"></i></a>
+
               <!-- Instagram -->
-              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                ><i class="fab fa-instagram"></i
-              ></a>
-    
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                  class="fab fa-instagram"></i></a>
+
               <!-- Linkedin -->
-              <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/devesh-chandel-b29722226/" role="button"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-    
+              <a class="btn btn-outline-light btn-floating m-1"
+                href="https://www.linkedin.com/in/devesh-chandel-b29722226/" role="button"><i
+                  class="fab fa-linkedin-in"></i></a>
+
               <!-- Github -->
-              <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Devesh1509" role="button"
-                ><i class="fab fa-github"></i
-              ></a>
+              <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Devesh1509" role="button"><i
+                  class="fab fa-github"></i></a>
             </section>
             <!-- Section: Social media -->
           </div>
           <!-- Grid container -->
-    
+
           <!-- Copyright -->
           <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             All Rights Reserved | Designed by
@@ -319,9 +381,15 @@
       </div>
     </div>
     <!-- JAVASCRIPT -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
     <script src="scripting.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </div>

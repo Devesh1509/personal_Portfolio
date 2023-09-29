@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
 
 * {
   margin: 0;
@@ -10,24 +10,22 @@ body {
   font-family: "Poppins", sans-serif;
   /* padding-top: 70px;  */
 }
-/* =================================paralex */
+/* =================================paralex ==================================*/
 .parallax {
   /* The image used */
   background-image: url(assets/images/homebg.png);
 
-  /* Set a specific height */
-  /* min-height: 665px;  */
-  height: 100%;
+  /* Set a specific height for larger screens */
+  height: 100vh;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size:auto;
+  background-size: cover;
 }
 
-
-/* ============================= */
+/* ============================= paralex===============================================*/
 
 header {
  /* background-color: #25b79f; */
@@ -42,16 +40,18 @@ header {
   margin: auto;
 }
 
+/*======================================= css for navbar ====================================*/
+
+
 #navbar {
   overflow: hidden;
-  /* background: rgba(0 ,0 ,0 ,.3 ); */
+  background: rgba(0, 0, 0, 0.3);
   padding: 20px 40px;
   transition: 0.7s;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 99;
-  /* box-shadow: 0 5px 3px -3px black; shawow to navbar */
 }
 
 #navbar a {
@@ -60,7 +60,7 @@ header {
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
 }
@@ -68,7 +68,6 @@ header {
 #navbar #logo {
   font-size: 30px;
   font-weight: bold;
-  /* transition: 5s; */
 }
 
 #navbar a:hover {
@@ -76,12 +75,7 @@ header {
   color: black;
 }
 
-/* #navbar a.active {
-  background-color: dodgerblue;
-  color: white;
-} */
-
-#navbar-right {    /* the portion containing buttons*/
+#navbar-right {
   float: none;
   position: absolute;
   top: 50%;
@@ -89,27 +83,27 @@ header {
   transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 580px) {
-  #navbar {
-    padding: 20px 10px !important;
-  }
-  #navbar a {
-    float: none;
-    display:inline-flex;
-    text-align: left;
-  }
-  #navbar-right {
-    float: none;
-  }
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
 }
 
-
+.hamburger-icon {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+ /* Media query for small screens */
+ 
 
 /* ////........Home Content........//// */
 
 .home-content .name {
   position: absolute;
-  top: 47%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #b5deee;
@@ -129,12 +123,10 @@ header {
 
 .angle-down-icon {
   position: absolute;
-  bottom: 10%;
+  bottom: 5%; /* Adjust the distance from the bottom as needed */
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   font-size: 2rem;
-  /* border: 3px solid #07374a; */
-  /* border-radius: 50%; */
 }
 
 .angle-down-icon a {
@@ -142,6 +134,7 @@ header {
   color: #07374a;
   padding: 1rem;
 }
+
 
 /*.....................................................About Me......................................................*/
 
@@ -258,11 +251,7 @@ header {
 /*================================SKILS END======================================*/
 
 
-
-/* ////.....Portfolio....../////====================================================== */
-
-
-/*================================PROJECT END=====================================================*/
+/*=============================================PROJECT=====================================================*/
 
 
 #projects {
@@ -492,4 +481,83 @@ footer {
 footer p {
   font-size: 18px; /* Font size */
   margin: 0; /* Remove default margins */
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  #navbar a:not(.hamburger) {
+    display: none;
+}
+
+.hamburger {
+    display: block;
+}
+
+#navbar-right {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    text-align: center;
+}
+
+#navbar {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+  .parallax {
+    /* Adjust the height for mobile screens */
+    height: 100vh; /* You can adjust the value as needed */
+    background-size: cover; /* Or use 'auto' if you prefer */
+  }
+
+  .home-content .name {
+    top: 40%; /* Adjust the vertical positioning for mobile */
+  }
+  .home-content .name h1 {
+    font-size: 1.8rem; /* Adjust font size for mobile */
+  }
+  .home-content .name p {
+    font-size: 1.2rem; /* Adjust font size for mobile */
+  }
+  .angle-down-icon {
+    bottom: 2%; /* Adjust the distance from the bottom for mobile */
+    font-size: 1.5rem; /* Adjust font size for mobile */
+  }
+
+
+  .project {
+    width: 100%;
+  }
+  .poject-btn {
+    flex-direction: column;
+    padding: 10px; /* Adjust padding as needed */
+  }
+  .project h2 {
+    font-size: 1em; /* Adjust font size as needed */
+  }
+  .project p {
+    margin-top: 5px; /* Adjust margin as needed */
+  }
+  .project-details {
+    padding: 10px; /* Adjust padding as needed */
+  }
+
+  .project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  padding: 5px 25px 10px;
+  }
+
+  .project {
+    margin-bottom: 20px; /* Adjust margin as needed */
+  }
+  .project-details {
+    height: auto;
+  }
 }

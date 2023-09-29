@@ -24,24 +24,23 @@ $(document).ready(function () {
     });
 });
 
-
-// =======PROGRESS BAR======
-
-// =============PROGRESS BAR END================
-
 //------------NAVBAR--------------
 
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
 window.onscroll = function() {scrollFunction()};
 
+
 function scrollFunction() {
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-    document.getElementById("navbar").style.padding = "10px 20px 10px 20px";
-    // document.getElementById("logo").style.fontSize = "30px";
-    document.getElementById("navbar").style.backgroundColor='rgba(0 ,0 ,0 ,0.5 )';
+      document.getElementById("navbar").style.padding = "10px 20px";
+      document.getElementById("navbar").style.backgroundColor = 'rgba(0 ,0 ,0 ,0.7 )';
   } else {
-    document.getElementById("navbar").style.padding = "10px 20px 20px 50px";
-    // document.getElementById("logo").style.fontSize = "30px";
-    document.getElementById("navbar").style.backgroundColor='rgba(0 ,0 ,0 ,0)';
+      document.getElementById("navbar").style.padding = "20px 40px";
+      document.getElementById("navbar").style.backgroundColor = 'rgba(0 ,0 ,0 ,0.9)';
   }
+}
+
+function toggleMenu() {
+  const navbarRight = document.getElementById("navbar-right");
+  navbarRight.classList.toggle("show-menu");
 }

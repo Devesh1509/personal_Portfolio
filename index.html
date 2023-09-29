@@ -7,15 +7,18 @@
   <title>MyPortfolio</title>
   <link rel="shortcut icon" href="/assets/images/about_Me.png" type="image/x-icon">
   <link rel="stylesheet" href="styling.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Above stylesheet is for icons used in footer-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 
 
-  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>  -->
+  <!--above script can be deleted it was for old footer-->
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
@@ -56,43 +59,44 @@
     <!-- ================================================ABOUT SECTION================================================== -->
     <section class="basecolor" id="about">
       <!-- <div class="container"> -->
-        <div class="about-content">
-          <div>
-            <h1 class="about-heading">About Me</h1>
-          </div>
-          <div class="left-content">
-            <!-- <div>
+      <div class="about-content">
+        <div>
+          <h1 class="about-heading">About Me</h1>
+        </div>
+        <div class="left-content">
+          <!-- <div>
               <h1 class="about-heading">About Me</h1>
             </div> -->
-            <img src="assets/images/about_Me.png" alt="image" />
+          <img src="assets/images/about_Me.png" alt="image" />
+          <div class="description">
             <p>
-              Strong in design and integration with intuitive problem-solving skills.
-              Proficient in JAVA, HTML, CSS, JAVASCRIPT, and SQL.
-              Passionate about implementing and launching new projects.
-              Ability to translate business requirements into technical solutions.
-              Looking to start the career as an entry-level software engineer with a reputed firm driven by technology.
-              <!-- Motivated final-year Computer Science Engineering student
-               with a strong foundation in DSA, Java, HTML, CSS, JavaScript,
-              and front-end development. Proficient in the Spring framework 
-              for Java and skilled in collaborating effectively within teams.
-              Possessing the essential traits for software engineering roles,
-              including analytical thinking, attention to detail, and a
-              passion for problem-solving. Seeking an opportunity as a Software
-              Development Engineer (SDE). -->
-
-              <!-- Strong in design and integration with intuitive problem-solving skills.
-                Proficient in JAVA, C#, PYTHON, JAVASCRIPT, and SQL.
-                Passionate about implementing and launching new projects.
-                Ability to translate business requirements into technical solutions.
-                Looking to start the career as an entry-level software engineer with a reputed firm driven by technology. -->
+              I'm Devesh Chandel, a final-year engineering student at Lakshmi Narain College of Technology in Bhopal. My
+              passion for technology drives me to excel in various aspects of software development. I possess a strong
+              grasp of front-end technologies like HTML, CSS, JavaScript, and React, allowing me to craft dynamic and
+              user-friendly web applications.
+              <br>
+              In addition to my front-end expertise, I'm well-versed in database management, proficient in both MySQL
+              and
+              MongoDB, enabling me to create robust, data-driven solutions. I've honed my skills through hands-on
+              experience, having successfully completed multiple projects that showcase my problem-solving abilities and
+              commitment to delivering high-quality results. <br>
+              My journey doesn't end there; I'm dedicated to enhancing my Data Structures and Algorithms (DSA) skills
+              through competitive programming. As I near the end of my academic journey, I eagerly look forward to
+              embarking on a career as an entry-level software engineer. I'm seeking opportunities with
+              technology-driven
+              firms where I can contribute my skills, collaborate with innovative teams, and play a part in shaping the
+              future of technology. Let's connect and explore the possibilities together.
             </p>
-            <div class="work-arrow">
-              <p>
-                <a href="#my-works">Check out my work<i class="fas fa-arrow-down"></i></a>
-              </p>
-            </div>
+          </div>
+          <div class="work-arrow">
+            <p>
+              <a href="#projects">Check out my work <i class="fa fa-arrow-down"></i>
+              </a>
+              <!-- <a href="#" class="fa fa-arrow-down"></a> -->
+            </p>
           </div>
         </div>
+      </div>
       <!-- </div> -->
     </section>
     <!-- =============================================ABOUT SECTION END================================================== -->
@@ -126,87 +130,36 @@
 
     <!--=======================================================PROJECT SECTION=================================================================== -->
 
-
-    <!-- <section id="my-works">
-      <div class="portfolio">
-        <div class="proj-heading">
-          <h1>Portfolio</h1>
-        </div>
-        <div class="portfolio-content container">
-          <div class="proj-1">
-            <img src="assets/images/homebg.png">
-            <div class="proj1-details">
-              <i class="fab fa-html5"></i>
-              <i class="fab fa-css3-alt"></i>
-              <i class="fab fa-js"></i>
-              <h2>Personal-Portfolio Website</h2>
-              <p>Build Using HTML,CSS,JS</p>
-              <button><a href="https://github.com/Devesh1509/personal_Portfolio" target="blank">View source <i
-                    class="fas fa-external-link-alt"></i></a>
-              </button>
-              <button><a href="https://devesh1509.github.io/personal_Portfolio/" target="blank">Try it Live <i
-                    class="fas fa-external-link-alt"></i></a>
-              </button>
-            </div>
-          </div>
-          <div class="proj-2">
-            <img src="assets/images/dev.jpg">
-            <div class="proj2-details">
-              <i class="fab fa-html5"></i>
-              <i class="fab fa-css3-alt"></i>
-              <h2>Image Slider</h2>
-              <p>Build Using JavaScript</p>
-              <button><a href="https://github.com/Devesh1509/JavaScript-Slider" target="blank">View source <i
-                    class="fas fa-external-link-alt"></i></a>
-              </button>
-              <button><a href="https://devesh1509.github.io/JavaScript-Slider" target="blank">Try it Live <i
-                    class="fas fa-external-link-alt"></i></a>
-              </button>
-            </div>
-          </div>
-          <div class="more-work">
-            <p>
-              More
-            </p>
-            <a href="https://github.com/Devesh1509" target="blank">GitHub</a>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-
-    <!--=======================================================PROJECT SECTION END=================================================================== -->
-
-
-    <!------------------------------------------------------------------------------------>
-
-    <!-- //////////////// -->
     <section id="projects" class="basecolor">
-
-
       <!-- <h2>Projects</h2> -->
+      <h1 class="section-heading">Projects</h1>
       <div class="project">
-
         <h2>Project 1</h2>
         <img src="./assets/images/slider.png" alt="Project 1">
-        <!-- <div class="project-buttons">
-          <a href="#" class="project-button">Button 1</a>
-          <a href="#" class="project-button">Button 2</a>
-        </div> -->
         <div class="poject-btn">
-          <button id="themecolor" class="left-button">Left Button</button>
-          <button id="themecolor" class="right-button">Right Button</button>
+          <a href="https://devesh1509.github.io/personal_Portfolio/">
+          <button id="themecolor" class="left-button">Try it Live</button>
+        </a>
+        <a href="https://github.com/Devesh1509/personal_Portfolio">
+          <button id="themecolor" class="right-button">View Source</button>
+        </a>
         </div>
 
         <div class="project-details">
-          <h3>Project 1</h3>
-          <p>Description of Project 1.
-            collection of images using "Next" and "Previous" buttons.
-            It was developed using a combination of HTML, CSS, and JavaScript, with a focus on user
-            experience and design aesthetics.
-            he Image Slider project is a dynamic and interactive web component that allows users
-            to seamlessly navigate through a collection of images using "Next" and "Previous" buttons.
-            It was developed using a ider project
+          <h3>Personal Portfolio</h3>
+          <p>My Personal Portfolio is a showcase of my skills and achievements, crafted using HTML, CSS, and JavaScript.
+            This project represents me in the digital world, allowing visitors to explore my journey, skills, and work.
+
+            The website features an elegant and responsive design that adapts to various devices, providing a seamless
+            user experience. JavaScript adds interactivity, enabling smooth navigation and dynamic content loading.
+
+            Within this digital space, you'll find a collection of my projects, each accompanied by detailed case
+            studies. A "About Me" section introduces my background and aspirations. Visitors can easily connect with me
+            through provided contact information and social media links.
+
+            This Personal Portfolio project not only highlights my technical proficiency but also serves as a reflection
+            of my creativity and passion for web development. It's a platform where I share my story, skills, and the
+            impact I aspire to make in the digital realm.
           </p>
           <a href="project1.html">Learn More</a>
         </div>
@@ -216,30 +169,29 @@
         <h2>project2</h2>
         <img src="./assets/images/projsld.jpeg" alt="Project 2">
         <div class="poject-btn">
-          <button id="themecolor" class="left-button">Left Button</button>
-          <button id="themecolor" class="right-button">Right Button</button>
+          <a href="https://devesh1509.github.io/JavaScript-Slider" style="padding: 0px;">
+            <button onclick="" id="themecolor" class="left-button">Try it Live</button>
+          </a>
+          <a href="https://github.com/Devesh1509/JavaScript-Slider">
+          <button id="themecolor" class="right-button">View Source</button>
+        </a>
         </div>
         <div class="project-details">
-          <h2>Image Slider</h2>
-          <p>Description of Project 2.
-            Description:
-            The Image Slider project is a dynamic and interactive web component that allows users
-            to seamlessly navigate through a collection of images using "Next" and "Previous" buttons.
-            It was developed using a ider project is a dynamic and interactive web component that allows users to
-            seamlessly navigate through a collection of images using "Next" and "Previous" buttons. It was developed
-            using a combination of HTML, CSS, and JavaScript, with a focus on user experience and design aesthetics.
+          <h3>Image Slider</h3>
+          <p>The Image Slider project is a dynamic and interactive web component that enables users to seamlessly
+            navigate through a collection of images using "Next" and "Previous" buttons. Developed with a combination of
+            HTML, CSS, and JavaScript, it prioritizes user experience and design aesthetics.
 
-            The Image Slider project showcases my skills in front-end web development, user interface design, and
-            JavaScript programming. Its user-friendly nature and adaptability make it a valuable addition to any website
-            seeking to showcase visual content in an engaging and interactive way. combination of HTML, CSS, and
-            JavaScript, with a focus on user
-            experience and design aesthetics.
-          </p>
-          <p>
-            The Image Slider project showcases my skills in front-end web development, user interface
-            design, and JavaScript programming. Its user-friendly nature and adaptability make it a
-            valuable addition to any website seeking to showcase visual content in an engaging and
-            interactive way.
+            This project serves as a showcase of my skills in front-end web development, user interface design, and
+            JavaScript programming. Its user-friendly design and adaptability make it a valuable addition to any website
+            looking to present visual content in an engaging and interactive manner.
+
+            With smooth transitions and a focus on visual appeal, the Image Slider project enhances the way users
+            interact with images. Whether it's for product displays, portfolio presentations, or cherished memories, it
+            elevates the overall browsing experience.
+
+            Experience dynamic image navigation with the Image Slider, a fusion of technology and design for an enriched
+            online experience.
           </p>
           <a href="project2.html">Learn More</a>
         </div>
@@ -249,12 +201,27 @@
         <h2>Project3</h2>
         <img src="./assets/images/projSRS-removebg-preview (2).png" alt="Project 3">
         <div class="poject-btn">
-          <button id="themecolor" class="left-button">Left Button</button>
-          <button id="themecolor" class="right-button">Right Button</button>
+          <a href="">
+          <button id="themecolor" class="left-button">Try it Live</button>
+        </a>
+          <a href="https://github.com/Devesh1509/Solar_tracking_system">
+          <button id="themecolor" class="right-button">View Source</button>
+        </a>
         </div>
         <div class="project-details">
-          <h3>Project 3</h3>
-          <p>Description of Project 3.</p>
+          <h3>Solar Tracking System</h3>
+          <p>
+            Our Arduino-based Solar Tracking System is a smart and efficient solution designed to maximize the
+            efficiency of solar panels. By using light sensors and servos, this innovative IoT project ensures that
+            solar panels are always aligned with the sun's position throughout the day.
+
+            The system continuously monitors the sunlight's angle and adjusts the orientation of the solar panels
+            accordingly, ensuring they capture the maximum amount of sunlight. This not only optimizes energy production
+            but also contributes to a more sustainable and eco-friendly energy source.
+
+            With the Arduino Solar Tracking System, we're harnessing the power of IoT technology to improve renewable
+            energy utilization, making solar energy an even more viable and sustainable option for a greener future.
+          </p>
           <a href="project3.html">Learn More</a>
         </div>
       </div>
@@ -263,13 +230,17 @@
         <h2>Project 4</h2>
         <img src="./assets/images/advice.png" alt="Project 2">
         <div class="poject-btn">
+          <a href="https://github.com/Devesh1509/advice-react-app">
           <button id="themecolor" class="left-button">view source</button>
+        </a>
+        <a href="https://statuesque-kangaroo-556fcc.netlify.app">
           <button id="themecolor" class="right-button">try it live</button>
+        </a>
         </div>
         <div class="project-details">
-          <h3>Project 2</h3>
-          <p>Description of Project 2.</p>
-          <a href="project2.html">Learn More</a>
+          <h3>advice Me</h3>
+          <p>Description of Project:.</p>
+          <a href="https://github.com/Devesh1509/advice-react-app#readme">Learn More</a>
         </div>
       </div>
 
@@ -286,16 +257,23 @@
           <a href="project3.html">Learn More</a>
         </div>
       </div>
-
-
+      <div class="project">
+        <h2>Project 4</h2>
+        <img src="./assets/images/advice.png" alt="Project 2">
+        <div class="poject-btn">
+          <button id="themecolor" class="left-button">view source</button>
+          <button id="themecolor" class="right-button">try it live</button>
+        </div>
+        <div class="project-details">
+          <h3>Project 2</h3>
+          <p>Description of Project 2.</p>
+          <a href="project2.html">Learn More</a>
+        </div>
+      </div>
 
       <!-- Add more project items as needed -->
     </section>
-
-
-
-
-
+    <!--=======================================================PROJECT SECTION END=================================================================== -->
 
 
     <!--======================================================CONTACT========================================================-->
@@ -315,7 +293,8 @@
           </div>
           <div class="contact-card">
             <h3>Download CV</h3>
-            <a id="themecolor" href="cv.pdf" download="your_cv.pdf" class="btn btn-primary">Download</a>
+            <a id="themecolor" href="./assets/docs/deve_shresume.pdf" download="devesh_cv.pdf"
+              class="btn btn-primary">Download</a>
           </div>
           <div class="contact-card">
             <h3>Availability</h3>
@@ -324,69 +303,32 @@
         </div>
       </div>
     </section>
+    <!--================================================CONTACT SECTION END========================================================-->
 
 
+    <section>
+      <footer>
+        <div class="social-icons">
+
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-envelope"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-github"></a>
+        </div>
+        <p>&copy; 2023 Devesh Chandel. All Rights Reserved.</p>
+      </footer>
+    </section>
 
 
-
-
-
-
-
-
-    <div id="footer" class="basecolor">
-      <h1>Devesh</h1>
-      <div class="footer-social">
-        <footer class="bg-dark text-center text-white">
-          <!-- Grid container -->
-          <div class="container p-4 pb-0">
-            <!-- Section: Social media -->
-            <section class="mb-4">
-              <!-- Facebook -->
-              <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/devesh.chandel.96/"
-                role="button"><i class="fab fa-facebook-f"></i></a>
-
-              <!-- Twitter -->
-              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                  class="fab fa-twitter"></i></a>
-
-              <!-- Google -->
-              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                  class="fab fa-google"></i></a>
-
-              <!-- Instagram -->
-              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                  class="fab fa-instagram"></i></a>
-
-              <!-- Linkedin -->
-              <a class="btn btn-outline-light btn-floating m-1"
-                href="https://www.linkedin.com/in/devesh-chandel-b29722226/" role="button"><i
-                  class="fab fa-linkedin-in"></i></a>
-
-              <!-- Github -->
-              <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Devesh1509" role="button"><i
-                  class="fab fa-github"></i></a>
-            </section>
-            <!-- Section: Social media -->
-          </div>
-          <!-- Grid container -->
-
-          <!-- Copyright -->
-          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            All Rights Reserved | Designed by
-            <a class="text-white" href="#home-page" style="color: aqua;">Devesh Chandel</a>
-          </div>
-          <!-- Copyright -->
-        </footer>
-      </div>
-    </div>
     <!-- JAVASCRIPT -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"></script>

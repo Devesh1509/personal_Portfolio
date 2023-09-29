@@ -1,17 +1,3 @@
-// $(document).ready(function () {
-//     $(window).scroll(function () {
-//         // checks if window is scrolled more than 500px, adds/removes solid class
-//         if ($(this).scrollTop() > 432) {
-//             $('.navbar').addClass();
-//             $('.back-to-top').addClass('visible');
-//         } else {
-//             $('.navbar').removeClass('solid');
-//             $('.back-to-top').removeClass('visible');
-//         }
-
-//     });
-// });
-
 
 $(document).ready(function () {
     // Add smooth scrolling to all links
@@ -52,7 +38,7 @@ function scrollFunction() {
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
     document.getElementById("navbar").style.padding = "10px 20px 10px 20px";
     // document.getElementById("logo").style.fontSize = "30px";
-    document.getElementById("navbar").style.backgroundColor='rgba(0 ,0 ,0 ,0.8 )';
+    document.getElementById("navbar").style.backgroundColor='rgba(0 ,0 ,0 ,0.5 )';
   } else {
     document.getElementById("navbar").style.padding = "10px 20px 20px 50px";
     // document.getElementById("logo").style.fontSize = "30px";

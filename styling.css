@@ -161,8 +161,8 @@ header {
 }
 
 .about-content img {
-  height: 250px;
-  width: 250px;
+  height: 230px;
+  width: 230px;
   object-fit: cover;
   border-radius: 50%;
   border-style: outset;
@@ -170,40 +170,35 @@ header {
   /* //style="fill: drop-shadow(10px 20px black); */
 }
 
-.about-content p {
+/* .about-content p {
   font-size: 1.2rem;
   color: #07374a;
   padding: 0 2.3rem;
-  text-align: center;
-}
-
-/* .about-me .about-content {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+  text-align:justify;
 } */
+
+.description{
+  margin: 20px 80px ;
+  color: #07374a;
+  text-align:center;
+}
 
 .about-content .left-content {
   
   text-align: center;
   background-color: whitesmoke;
   margin: 10px 50px 50px;
-  padding: 70px 0px 50px 0px;
+  padding: 10px 0px 10px 0px;
 }
+
 
  
 /*.....................................................ABOUT ME ENDS...................................................*/
 
-
-
-
-
-/* ///.....Skill Bar....../// */
-
-/*//////*/
+/*================================SKILS======================================*/
 
 #skills {
-  padding: 50px;
+  padding: 80px 50px 45px;
   /* background: whitesmoke; */
 }
 .basecolor{
@@ -257,9 +252,10 @@ header {
 .java {width: 70%;}
 
 #themecolor{
-  background-color:#3587a4;
+  background-color:rgb(53, 135, 164);
 }
 
+/*================================SKILS END======================================*/
 
 
 
@@ -276,7 +272,11 @@ header {
   justify-content: space-between;
   /* background: whitesmoke; */
 }
-
+.section-heading {
+  width: 100%; /* Make the heading span the full width */
+  text-align: center; /* Center the text horizontally */
+  margin: 30px; /* Add some spacing below the heading */
+}
 .project {
   width: calc(33.33% - 30px); /* Adjust the width as needed */
   /* height: 400px; */
@@ -326,7 +326,7 @@ header {
 .project p {
   margin-top: 10px;
 }
-
+/* 
 .project a {
   display: inline-block;
   margin-top: 10px;
@@ -336,7 +336,7 @@ header {
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-}
+} */
 .poject-btn {
   display: flex;
   justify-content: space-between;
@@ -353,34 +353,40 @@ header {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  outline: none !important;
+  /* transition: background-color 0.3s ease; */
 }
 
 .left-button:hover, .right-button:hover {
-  background-color: #0056b3;
+  background-color: #bfddfd !important;
 }
 
+/*================================ PROJECTS END ======================================*/
 
 
 
-/* ===============================contact=================================================================*/
+/* =============================== CONTACT ==========================================================*/
 
 
-/* ======================FORM=============================== */
 
-/* Contact section styles */
-/* Contact section styles */
-/* .contact-section {
-  background-color: #f8f8f8;
-  padding: 80px 0;
-  text-align: center;
-} */
 
+#contact{
+  padding-top: 100px;
+}
+
+#contact .container{
+  padding: 0px 80px 50px;
+  background-color: whitesmoke;
+  margin:auto;
+  margin-bottom: 20px;
+  border-radius: 7px;
+}
 .section-title {
   font-size: 32px;
   color: #333;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   text-align: center;
+  padding: 30px;
 }
 
 .contact-cards {
@@ -402,10 +408,7 @@ header {
 .contact-card h3 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #8eaebb;
-
-
-  
+  color: #8eaebb;  
 }
 
 ul {
@@ -448,23 +451,45 @@ a:hover {
   background-color: #90d6f1;
 }
 
+/*================================ CONTACT ======================================*/
 
 /* Add any additional styles or overrides as needed */
 
 
 
 /*>>>>>>>>>>------------------------------------------FOOTER--------------------------------------<<<<<<<<<<<<<*/
+/* Style for the entire footer */
+footer {
+  /* background-color: rgb(240, 234, 234); Background color */
+  background-color: whitesmoke;
+  color: rgb(101, 95, 95); /* Text color */
+  padding: 20px 0; /* Padding at the top and bottom */
+  text-align: center; /* Center align text */
+}
+
+/* Style for the social media icons */
+.social-icons {
+  margin-bottom: 20px; /* Spacing below the icons */
+}
+.social-icons .fa{
+    font-size: x-large;
+}
+
+.social-icons a {
+  display: inline-block; /* Display icons in a row */
+  margin: 0 10px; /* Spacing between icons */
+  text-decoration: none; /* Remove underlines from links */
+  filter: grayscale(100%); /* Convert icons to grayscale */
+}
 
 
 
-#footer h1{
-  /* background-color: whitesmoke; */
-  text-align: center;
-    color: #07374a;
-    font-size: 2.3rem;
-    font-weight: 700;
-    margin-bottom: 0;
-    padding: 50px;
-    /* margin: 3rem 0; */
-    /* padding-top: 100px; */
+.social-icons a:hover {
+  filter: none; /* Remove grayscale filter on hover (optional) */
+}
+
+/* Style for the "All Rights Reserved" text */
+footer p {
+  font-size: 18px; /* Font size */
+  margin: 0; /* Remove default margins */
 }
